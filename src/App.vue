@@ -16,8 +16,8 @@
       <el-container>
         <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
            <el-menu   router>
-                <el-menu-item index="first1" >日消费明细</el-menu-item>
-                <el-menu-item index="/">日消费清单</el-menu-item>
+                <el-menu-item index="/" >拍品详情</el-menu-item>
+                <el-menu-item index="/111">日消费清单</el-menu-item>
                 <el-menu-item index="monthly">月消费清单</el-menu-item>
                 <el-menu-item index="yearly">年消费清单</el-menu-item>
             </el-menu>
@@ -25,14 +25,6 @@
 
         <el-container>
           <el-main :style="height">
-            <!--<el-table :data="tableData" stripe >
-              <el-table-column prop="date" label="日期" width="140">
-              </el-table-column>
-              <el-table-column prop="name" label="姓名" width="120">
-              </el-table-column>
-              <el-table-column prop="address" label="地址">
-              </el-table-column>
-            </el-table>-->
                       	<router-view></router-view>
           </el-main>
 
@@ -70,7 +62,7 @@
   };
 </script>
 <style>
-  .el-input{
+  .el-input,.el-textarea{
     width: 300px;
   }
   .el-col-11{
