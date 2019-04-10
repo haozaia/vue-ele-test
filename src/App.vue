@@ -25,7 +25,7 @@
 
         <el-container>
           <el-main :style="height">
-                      	<router-view></router-view>
+             <router-view></router-view>
           </el-main>
 
         </el-container>
